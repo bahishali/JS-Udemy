@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit</title>
+    <link rel="shortcut icon" href="#">
+
+    <style>
+        body{
+          background: #eee;
+        }
+
+        form{          
+          margin:  auto;
+          background: white;
+          padding: 20px;
+          max-width: 250px;
+        }
+
+        input{
+          display: block;
+          padding: 5px;
+          margin: 10px auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- 
+    REGEX
+
+    Regex101.com sitesinde  ECMAScript(JS) olanı seçip karakter kontrolü yapıyoruz
+    /bus
+    içinde bus geçen hepsini seç
+
+    ^bus$
+    başında bir şey olmasın sonunda bir şey olmayan bus hepsini seç
+      
+    bus$
+    başında bir şey olabilir sonunda bir şey olmayan bus hepsini seç
+  
+    bus$
+    başında bir şey olmasın sonunda bir şey olabilir bus hepsini seç
+      
+    Karakter Kontrolü
+    /^[k-z]$
+    k ile z arasında bir karakter olsun
+
+    Büyük harf Kontrolü
+    /^[a-zA-Z]$
+  
+    Birden fazla karakter kontrolü
+    ^[a-zA-Z]{5,10}$
+    küçük ve büyük harf olabilir 5 ile 10 arasında olsun
+    asdasdasasdasda eşleşmez 10 dan fazla 
+    asds eşleşmez 5 den az
+    asdsfFGFs eşleşir 6 karakter
+    asdsa12 sayı kullandığım için eşleşmez
+
+    SAYI KONTROLÜ
+    ^[a-zA-Z0-9]{5,10}$
+    asdsfFGFs3 eşleşir
+    asdsfFG34@ eşleşmez özel karakter var
+    
+    ÖZEL KARAKTER KONTROLÜ
+    ^.{5,10}$
+    . demek tüm karakterleri içerebilir
+  -->
+
+    
+
+
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <h1 id="bus">DOM</h1>
+    </div>
+    <form class="signupForm">
+        <input type="text" id="username" name="username" placeholder="Please Enter Username">
+        <input type="submit" value="Kaydet">
+    </form>
+
+
+    <script src="busra.js"></script>
+</body>
+</html>
